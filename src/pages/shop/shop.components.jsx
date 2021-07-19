@@ -12,6 +12,7 @@ export default class ShopPage extends React.Component {
     }
     render() {
         const { collection }  = this.state
+        console.log("in Shop")
         return (
             <div className="shop-page">
             {
