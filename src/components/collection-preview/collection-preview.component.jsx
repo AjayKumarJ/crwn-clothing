@@ -13,8 +13,8 @@ const CollectionPreview = ({title, routeName, items}) => (
             {
                 items
                 .filter((item, idx) => idx < 4)
-                .map(({id, ...restProperties}) => (
-                    <CollectionItem key={id} {...restProperties}/>
+                .map(item => (
+                    <CollectionItem key={item.id} item={item}/>
                 ))
             }
             
